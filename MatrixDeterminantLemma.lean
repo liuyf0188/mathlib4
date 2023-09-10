@@ -1,12 +1,8 @@
 import Mathlib
 import Mathlib.LinearAlgebra.Matrix.SchurComplement
 
-variable (m n: Type)
-variable [Fintype m][Fintype n][DecidableEq m][DecidableEq n]
-
-
-variable (R: Type)
-variable [Field R][DecidableEq R]
+variable (m n R: Type)
+variable [Fintype m][Fintype n][DecidableEq m][DecidableEq n][Field R][DecidableEq R]
 
 namespace Matrix
 open Matrix
